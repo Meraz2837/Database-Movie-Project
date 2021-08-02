@@ -29,7 +29,7 @@ if(isset($_POST['update'])) // when click on Update button
 ?>
 
 <h3>Update Data</h3>
-<p>We recommend you to change only Director Name not Director ID. Because You may find a error (Cannot delete or update a parent row: a foreign key constraint fails)</p>
+<p>We recommend you to change only Director Name not Director ID. Because You may find an error (Cannot delete or update a parent row: a foreign key constraint fails)</p>
 
 <form method="POST">
   <input type="text" name="directorId" value="<?php echo $data['directorId'] ?>" placeholder="Enter Director ID" Required>

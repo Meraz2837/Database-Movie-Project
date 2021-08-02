@@ -21,7 +21,7 @@
                     <a class="btn btn-primary mt-5" href="UpdateDirectorRecords.php">Director Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary mt-5" href="">Movie Table</a>
+                    <a class="btn btn-primary mt-5" href="UpdateMovieRecords.php">Movie Table</a>
                 </li>
                 <li>
                     <a class="btn btn-primary mt-5" href="">Moviecast Table</a>
