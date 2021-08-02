@@ -18,7 +18,7 @@
                     <a class="btn btn-primary mt-5" href="UpdateCountryRecords.php">Country Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary mt-5" href="">Director Table</a>
+                    <a class="btn btn-primary mt-5" href="UpdateDirectorRecords.php">Director Table</a>
                 </li>
                 <li>
                     <a class="btn btn-primary mt-5" href="">Movie Table</a>
