@@ -15,7 +15,7 @@
         <div class="container text-center mt-3">
             <ul class="list border border-primary">
                 <li>
-                    <a class="btn btn-primary mt-5" href="">Country Table</a>
+                    <a class="btn btn-primary mt-5" href="UpdateCountryRecords.php">Country Table</a>
                 </li>
                 <li>
                     <a class="btn btn-primary mt-5" href="">Director Table</a>

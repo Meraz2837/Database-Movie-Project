@@ -31,7 +31,7 @@
           <a class="nav-link" href="AddTableOptions.php">Add to Database</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Update Database</a>
+          <a class="nav-link" href="UpdateTableOptions.php">Update Database</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="DeleteTableOptions.php">Delete From Database</a>

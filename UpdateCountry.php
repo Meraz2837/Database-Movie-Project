@@ -4,7 +4,7 @@ include "dbConn.php"; // Using database connection file here
 
 $id = $_GET['id']; // get id through query string
 
-$qry = mysqli_query($db,"select * from tblemp where id='$id'"); // select query
+$qry = mysqli_query($db,"select * from country where countryId='$id'"); // select query
 
 $data = mysqli_fetch_array($qry); // fetch data
 
@@ -13,17 +13,17 @@ if(isset($_POST['update'])) // when click on Update button
     $Countrycode = $_POST['countryId'];
     $Countryname = $_POST['countryName'];
 	
-    $edit = mysqli_query($db,"update country set fullname='$Countrycode', age='$Countryname' where id='$id'");
+    $edit = mysqli_query($db,"update country set countryId='$Countrycode', countryName='$Countryname' where id='$id'");
 	
     if($edit)
     {
         mysqli_close($db); // Close connection
-        header("location:all_records.php"); // redirects to all records page
+        header("location:UpdateCountryRecords.php"); // redirects to all records page
         exit;
     }
     else
     {
-        echo mysqli_error();
+        echo "Error deleting record";
     }    	
 }
 ?>
