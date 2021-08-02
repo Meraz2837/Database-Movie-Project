@@ -27,7 +27,7 @@
                     <a class="btn btn-primary mt-5" href="UpdateMovieCastRecords.php">Moviecast Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary my-5" href="">Movie Genre Table</a>
+                    <a class="btn btn-primary my-5" href="UpdateMovieGenreRecords.php">Movie Genre Table</a>
                 </li>
                 
             </ul>
