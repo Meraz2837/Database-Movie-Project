@@ -1,0 +1,13 @@
+
+.BGB{
+    background-color: #000000;
+}
+.icon{
+    width: 50px;
+}
+ul.list{
+    list-style-type: none !important;
+}
+.btn{
+    width: 500px;
+}
