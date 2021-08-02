@@ -1,4 +1,6 @@
-
+body{
+    background-color: #000000 !important;
+}
 .BGB{
     background-color: #000000;
 }
@@ -10,4 +12,11 @@ ul.list{
 }
 .btn{
     width: 500px;
+}
+ul.list2{
+    list-style-type: none !important;
+}
+.Button a:hover{
+    background: rgb(132, 134, 134) !important;
+    color: wheat;
 }
