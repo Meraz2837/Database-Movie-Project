@@ -99,7 +99,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .wrapper{ width: 360px; padding: 20px; }
     </style>
 </head>
-<body>
+<body class="bg-dark text-white">
     <div class="pt-5 container text-center">
     <h2>Welcome to the Biggest Movie Database by Mazbaur Rashid</h2>
 </div>
