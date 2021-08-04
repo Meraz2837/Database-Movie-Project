@@ -16,7 +16,9 @@ ul.list{
 ul.list2{
     list-style-type: none !important;
 }
+.Button a{
+    transition: 0.6s ease;
+}
 .Button a:hover{
     background: rgb(132, 134, 134) !important;
-    color: wheat;
 }
