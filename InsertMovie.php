@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Record Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-dark text-white">
 <form action="InsertMovieP.php" method="post">
     <p>
         <label for="Movie_ID">Movie ID: </label>
@@ -38,7 +39,7 @@
         <label for="Movie_Name">Movie Name: </label>
         <input type="text" name="title" id="Movie_Name">
     </p>
-    <input type="submit" value="Submit">
+    <input class="btn btn-primary" type="submit" value="Submit">
 </form>
 </body>
 </html>
