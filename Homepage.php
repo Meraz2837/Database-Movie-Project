@@ -32,10 +32,12 @@
 
     .result {
       color: white;
+      background: #0f6efd;
       position: absolute;
       z-index: 999;
       top: 100%;
       left: 0;
+      transition: 0.6s ease;
     }
 
     .search-box input[type="text"],
@@ -54,6 +56,7 @@
     }
 
     .result p:hover {
+      color: #000000;
       background: #f2f2f2;
     }
   </style>
@@ -97,7 +100,7 @@
       <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ShowDB.php">Show Database</a>

@@ -13,6 +13,47 @@
 </head>
 
 <body class="bg-dark">
+
+    <nav style="background-color: rgba(0, 0, 0, 0.2) !important;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="img-fluid icon" src="Icons/Copy of Movie.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Homepage.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ShowDB.php">Show Database</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AddTableOptions.php">Add to Database</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="UpdateTableOptions.php">Update Database</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DeleteTableOptions.php">Delete From Database</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" href="SQLOperation.php">SQL Operations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Logout</a>
+                    </li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" autocomplete="off" placeholder="Search movie" />
+                    <div class="result"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
     <Section>
         <div class="container text-center mt-3">
             <h1 class="text-white">SQL Join</h1>
@@ -40,6 +81,19 @@
                 </li>
                 <li>
                     <a class="btn btn-primary my-5" href="MovieDesc.php">Descending Order</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mt-3">
+            <h1 class="text-white">Group By</h1>
+            <hr class="text-white">
+            <ul class="list border border-primary">
+                <h4 class="text-white mt-3">Count movie in each year from Database</h4>
+                <li>
+                    <a class="btn btn-primary my-5" href="GroupByMovies.php">Group By</a>
                 </li>
             </ul>
         </div>
