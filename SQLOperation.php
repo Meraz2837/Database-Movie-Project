@@ -36,10 +36,10 @@
             <ul class="list border border-primary">
                 <h4 class="text-white mt-3">Re-arrange Movies in Ascending or Descending Order</h4>
                 <li>
-                    <a class="btn btn-primary mt-5" href="">Ascending Order</a>
+                    <a class="btn btn-primary mt-5" href="MovieAsc.php">Ascending Order</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary my-5" href="">Descending Order</a>
+                    <a class="btn btn-primary my-5" href="MovieDesc.php">Descending Order</a>
                 </li>
             </ul>
         </div>
