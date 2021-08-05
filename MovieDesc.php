@@ -7,7 +7,7 @@
 
 <body>
 
-    <h2>Left Join</h2>
+    <h2>Movies in Descending</h2>
     <p>Ordering movies in Descending order acording to year!</p>
 
     <table border="2">
