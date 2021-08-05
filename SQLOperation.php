@@ -9,10 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Moviebuzz</title>
+    <title>SQL Operation</title>
 </head>
 
-<body>
+<body class="bg-dark">
     <Section>
         <div class="container text-center mt-3">
             <h1 class="text-white">SQL Join</h1>
@@ -20,10 +20,10 @@
             <ul class="list border border-primary">
                 <h4 class="text-white mt-3">Do Join Operation</h4>
                 <li>
-                    <a class="btn btn-primary mt-5" href="">Inner Join</a>
+                    <a class="btn btn-primary mt-5" href="InnerJoin.php">Inner Join</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary my-5" href="">Left Join</a>
+                    <a class="btn btn-primary my-5" href="LeftJoin.php">Left Join</a>
                 </li>
             </ul>
         </div>
