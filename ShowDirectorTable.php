@@ -1,42 +1,40 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "movie project";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT * FROM director";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  echo "<table><tr><th>Director ID</th><th>Director Name</th></tr>";
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "<tr><td>".$row["directorId"]."</td><td>".$row["Director_name"]."</td></tr>";
-  }
-  echo "</table>";
-} else {
-  echo "0 results";
-}
-$conn->close();
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="Style.css">
-  <title>Show Director</title>
+  <title>Display all records from Database</title>
 </head>
-<body class="text-white">
-  
+<body>
+
+<h2>Director Details</h2>
+
+<table border="2">
+  <tr>
+    <td>Director ID</td>
+    <td>Director Name</td>
+  </tr>
+
+<?php
+
+include "dbConn.php"; // Using database connection file here
+
+$records = mysqli_query($db,"select * from director"); // fetch data from database
+
+while($data = mysqli_fetch_array($records))
+{
+?>
+  <tr>
+    <td><?php echo $data['directorId']; ?></td>
+    <td><?php echo $data['Director_name']; ?></td>   
+  </tr>	
+<?php
+}
+?>
+</table>
+<!-- Footer -->
+  <!-- Copyright -->
+  <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
+  </div>
 </body>
 </html>
