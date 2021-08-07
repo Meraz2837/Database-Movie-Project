@@ -121,7 +121,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               More
             </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="AboutDeveloper.php">About Developer</a></li>
             </ul>
           </li>
