@@ -61,6 +61,14 @@
     </nav>
 
 
+    <section>
+    <img src="Icons/Copy of Movie.png" alt="Stickman" width="24" height="24">
+    </section>
+
+
+
+
+
     <!-- Footer -->
     <!-- Copyright -->
     <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
