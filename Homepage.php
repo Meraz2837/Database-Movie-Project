@@ -93,14 +93,14 @@
 
   <nav style="background-color: rgba(0, 0, 0, 0.2) !important;" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#"><img class="img-fluid icon" src="Icons/Copy of Movie.png" alt=""></a>
+      <a class="navbar-brand" href="Homepage.php"><img class="img-fluid icon" src="Icons/Copy of Movie.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-danger" aria-current="page" href="Homepage.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ShowDB.php">Show Database</a>
@@ -116,6 +116,14 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="SQLOperation.php">SQL Operations</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="AboutDeveloper.php">About Developer</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="logout.php">Logout</a>
