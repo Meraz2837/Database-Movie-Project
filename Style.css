@@ -22,7 +22,6 @@ ul.list2{
 .Button a:hover{
     background: rgb(132, 134, 134) !important;
 }
-#navbarSupportedContent > ul > li.nav-item.dropdown > ul > li > a:active{
-    background: #000000 !important;
-    color: #000000;
+.butn{
+    width: 25px !important;
 }

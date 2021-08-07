@@ -61,10 +61,31 @@
     </nav>
 
 
-    <section>
-    <img src="Icons/Copy of Movie.png" alt="Stickman" width="24" height="24">
-    </section>
+    <!-- Cover -->
 
+    <img class="img-fluid" src="Image/Meraz Cover.png" alt="">
+
+    <!-- Imgage -->
+    <section>
+        <div class="card my-3 mx-auto bg-dark border-danger" style="max-width: 1800px;">
+            <div class="row g-0">
+                <div class="col-md-4 bg-dark">
+                    <img src="Icons/Meraz.png" class="img-fluid rounded-start" alt="Meraz">
+                </div>
+                <div class="col-md-8 my-auto">
+                    <div class="card-body text-white">
+                        <h2 class="card-title text-danger">Md. Mazbaur Rashid<br>192-15-2837</h2>
+                        <p class="card-text">Simple person living up with small dreams waiting to be completed! Nice to meet you all</p>
+                        <p class="card-text">You may Visit:</p>
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.facebook.com/mezbah.meraz/">Facebook</a>    
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.instagram.com/meraz_reborn/">Instagram</a>    
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="">LinkedIn</a>    
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="">Google Site</a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
