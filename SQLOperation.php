@@ -107,6 +107,22 @@
         </div>
     </section>
 
+    <section>
+        <div class="container text-center mt-3">
+            <h1 class="text-white">Max Min</h1>
+            <hr class="text-white">
+            <ul class="list border border-danger">
+                <h4 class="text-white mt-3">Find out Maximum and Minimum Budget</h4>
+                <li>
+                    <a class="btn btn-danger mt-5" href="MaximumMovieBudget.php">Maximum</a>
+                </li>
+                <li>
+                    <a class="btn btn-danger my-5" href="MinimumMovieBudget.php">Minimum</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2021 Copyright:
         <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
