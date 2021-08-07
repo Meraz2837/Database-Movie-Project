@@ -109,12 +109,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body class="bg-dark text-white">
     <div class="pt-5 container text-center">
-        <h2>Welcome to the Biggest Movie Database by Mazbaur Rashid</h2>
+        <h1>Welcome to the Biggest Movie Database!</h1>
+        <h5>By Md. Mazbaur Rashid (192-15-2837)</h5>
     </div>
     <div class="wrapper mx-auto">
 
-        <h2>Admin Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <h2 class="text-danger">Admin Login</h2>
+        <p>Please login with the details asked.</p>
 
         <?php
         if (!empty($login_err)) {

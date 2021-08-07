@@ -26,7 +26,7 @@
                         <a class="nav-link" aria-current="page" href="Homepage.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-primary" href="ShowDB.php">Show Database</a>
+                        <a class="nav-link active text-danger" href="ShowDB.php">Show Database</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="AddTableOptions.php">Add to Database</a>
@@ -55,28 +55,34 @@
 
     <Section>
         <div class="container text-center mt-3">
-            <ul class="list border border-primary">
+            <ul class="list border border-danger">
+                <h1 class="text-white my-3">Wanna see database?<br>Just hit on a table!</h1>
                 <li>
-                    <a class="btn btn-primary mt-5" href="ShowCountryTable.php">Country Table</a>
+                    <a class="btn btn-danger mt-5" href="ShowCountryTable.php">Country Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary mt-5" href="ShowDirectorTable.php">Director Table</a>
+                    <a class="btn btn-danger mt-5" href="ShowDirectorTable.php">Director Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary mt-5" href="ShowMovieTable.php">Movie Table</a>
+                    <a class="btn btn-danger mt-5" href="ShowMovieTable.php">Movie Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary mt-5" href="ShowMoviecastTable.php">Moviecast Table</a>
+                    <a class="btn btn-danger mt-5" href="ShowMoviecastTable.php">Moviecast Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary my-5" href="ShowMovieGenreTable.php">Movie Genre Table</a>
+                    <a class="btn btn-danger my-5" href="ShowMovieGenreTable.php">Movie Genre Table</a>
                 </li>
 
             </ul>
         </div>
     </Section>
 
-
+    <!-- Footer -->
+    <!-- Copyright -->
+    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
+    </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->

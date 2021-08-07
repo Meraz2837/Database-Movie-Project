@@ -107,9 +107,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body class="bg-dark text-white ">
+    <div class="container text-center">
+        <h1 class="my-3">Oh! A new User! Hey Whatsup?<br>Welcome by the way!</h1>
+        <p class="mb-2">Enter to the biggest movie database by creating an account!</p>
+    </div>
+
     <div class="wrapper mx-auto">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+        <h2 class="text-danger">Sign Up</h2>
+        <p>Please fill with asked information to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Username</label>
@@ -127,11 +132,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="submit" class="btn btn-danger" value="Submit">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+            <p>Already have an account? <a class="text-danger" href="login.php">Login here</a>.</p>
         </form>
     </div>    
+
+    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
+    </div>
+
 </body>
 </html>

@@ -80,7 +80,7 @@
       });
 
       // Set search input value on click of result item
-      
+
       $(document).on("click", ".result p", function() {
         $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
         $(this).parent(".result").empty();
@@ -135,25 +135,26 @@
       <div style="padding:25% 0; padding-right:20px; border-right: 5px solid #ccc;" class="col-md-6 text-white">
         <h1>Welcome</h1>
         <h3>To the Biggest Movie Server</h3>
+        <h5>By Mazbaur Rashid (192-15-2837)</h5>
       </div>
       <div class="col-md-6">
         <div>
           <h3 style="padding-top: 23%;" class="text-white text-center">You can do the Following with the Database</h3>
           <ul class="list text-center Button">
             <li>
-              <a class="btn btn-primary mt-5" href="ShowDB.php">Show Database</a>
+              <a class="btn btn-danger mt-5" href="ShowDB.php">Show Database</a>
             </li>
             <li>
-              <a class="btn btn-primary mt-5" href="AddTableOptions.php">Add to Database</a>
+              <a class="btn btn-danger mt-5" href="AddTableOptions.php">Add to Database</a>
             </li>
             <li>
-              <a class="btn btn-primary mt-5" href="UpdateTableOptions.php">Update Database</a>
+              <a class="btn btn-danger mt-5" href="UpdateTableOptions.php">Update Database</a>
             </li>
             <li>
-              <a class="btn btn-primary mt-5" href="DeleteTableOptions.php">Delete From Database</a>
+              <a class="btn btn-danger mt-5" href="DeleteTableOptions.php">Delete From Database</a>
             </li>
             <li>
-              <a class="btn btn-primary mt-5" href="SQLOperation.php">SQL Operations</a>
+              <a class="btn btn-danger mt-5" href="SQLOperation.php">SQL Operations</a>
             </li>
           </ul>
           <div style="text-align: right; padding:20% 47.7%">

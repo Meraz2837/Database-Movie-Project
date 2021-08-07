@@ -38,7 +38,7 @@
                         <a class="nav-link" href="DeleteTableOptions.php">Delete From Database</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-primary" href="SQLOperation.php">SQL Operations</a>
+                        <a class="nav-link active text-danger" href="SQLOperation.php">SQL Operations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">Logout</a>
@@ -58,13 +58,13 @@
         <div class="container text-center mt-3">
             <h1 class="text-white">SQL Join</h1>
             <hr class="text-white">
-            <ul class="list border border-primary">
+            <ul class="list border border-danger">
                 <h4 class="text-white mt-3">Do Join Operation</h4>
                 <li>
-                    <a class="btn btn-primary mt-5" href="InnerJoin.php">Inner Join</a>
+                    <a class="btn btn-danger mt-5" href="InnerJoin.php">Inner Join</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary my-5" href="LeftJoin.php">Left Join</a>
+                    <a class="btn btn-danger my-5" href="LeftJoin.php">Left Join</a>
                 </li>
             </ul>
         </div>
@@ -74,13 +74,13 @@
         <div class="container text-center mt-3">
             <h1 class="text-white">Asc Dsc</h1>
             <hr class="text-white">
-            <ul class="list border border-primary">
+            <ul class="list border border-danger">
                 <h4 class="text-white mt-3">Re-arrange Movies in Ascending or Descending Order</h4>
                 <li>
-                    <a class="btn btn-primary mt-5" href="MovieAsc.php">Ascending Order</a>
+                    <a class="btn btn-danger mt-5" href="MovieAsc.php">Ascending Order</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary my-5" href="MovieDesc.php">Descending Order</a>
+                    <a class="btn btn-danger my-5" href="MovieDesc.php">Descending Order</a>
                 </li>
             </ul>
         </div>
@@ -90,10 +90,10 @@
         <div class="container text-center mt-3">
             <h1 class="text-white">Group By</h1>
             <hr class="text-white">
-            <ul class="list border border-primary">
+            <ul class="list border border-danger">
                 <h4 class="text-white mt-3">Count movie in each year from Database</h4>
                 <li>
-                    <a class="btn btn-primary my-5" href="GroupByMovies.php">Group By</a>
+                    <a class="btn btn-danger my-5" href="GroupByMovies.php">Group By</a>
                 </li>
             </ul>
         </div>
