@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
-    <title>Moviebuzz - Update data on Database</title>
+    <title>Moviebuzz - Mazbaur Rashid</title>
 </head>
 
 <body class="bg-dark">
@@ -77,10 +78,10 @@
                         <h2 class="card-title text-danger">Md. Mazbaur Rashid<br>192-15-2837</h2>
                         <p class="card-text">Simple person living up with small dreams waiting to be completed! Nice to meet you all</p>
                         <p class="card-text">You may Visit:</p>
-                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.facebook.com/mezbah.meraz/">Facebook</a>    
-                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.instagram.com/meraz_reborn/">Instagram</a>    
-                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="">LinkedIn</a>    
-                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="">Google Site</a>    
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.facebook.com/mezbah.meraz/">Facebook</a>
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.instagram.com/meraz_reborn/">Instagram</a>
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.linkedin.com/in/mazbaur-rashid-meraz-7193681a6/">LinkedIn</a>
+                        <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://sites.google.com/diu.edu.bd/mazbaurrashid/home">Google Site</a>
                     </div>
                 </div>
             </div>
