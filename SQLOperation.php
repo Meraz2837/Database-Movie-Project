@@ -124,6 +124,23 @@
         </div>
     </section>
 
+    <section>
+        <div class="container text-center mt-3">
+            <h1 class="text-white">Distinct</h1>
+            <hr class="text-white">
+            <ul class="list border border-danger">
+                <h4 class="text-white mt-3">Find out Data without duplication</h4>
+                <li>
+                    <a class="btn btn-danger mt-5" href="Distinct1.php">Year from movie</a>
+                </li>
+                <li>
+                    <a class="btn btn-danger my-5" href="Distinct2.php">Cast name from moviecast</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
   <!-- Footer -->
   <section>
     <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer">
@@ -168,8 +185,6 @@
 
     <!-- Footer -->
   <hr class="text-white">
-
-
 
 
     <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
