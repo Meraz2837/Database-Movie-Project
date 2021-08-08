@@ -148,16 +148,16 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Image/1.jpg" class="d-block w-100" alt="MovieImage1">
+        <img src="Image/1.png" class="d-block w-100" alt="MovieImage1">
       </div>
       <div class="carousel-item">
-        <img src="Image/2.jpg" class="d-block w-100" alt="MovieImage1">
+        <img src="Image/2.png" class="d-block w-100" alt="MovieImage1">
       </div>
       <div class="carousel-item">
-        <img src="Image/3.jpg" class="d-block w-100" alt="MovieImage1">
+        <img src="Image/3.png" class="d-block w-100" alt="MovieImage1">
       </div>
       <div class="carousel-item">
-        <img src="Image/4.jpg" class="d-block w-100" alt="MovieImage1">
+        <img src="Image/4.png" class="d-block w-100" alt="MovieImage1">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
