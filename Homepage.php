@@ -137,9 +137,9 @@
     </div>
   </nav>
 
-    <!-- Image Careosal -->
+  <!-- Image Careosal -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -208,14 +208,68 @@
   </div>
 
   <!-- Footer -->
-  <!-- Copyright -->
-  <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
-  </div>
-  <!-- Copyright -->
-  </footer>
+
   <!-- Footer -->
+  <section>
+    <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer">
+      <div class="container">
+        <div class="row py-5 text-white">
+          <div class="col-lg-3 col-md-12 col-12">
+            <h1 class="text-danger">Moviebuzz</h1>
+            <p>
+              Moviebuzz is an online movie information platform where you can find movie details easily. A project designed for learning purposes. This project is under Database Management System Lab.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <h4>Important Links
+            </h4>
+            <ul style="list-style-type: none;" class="mt-2 text-danger">
+              <li class="mt-2"><a class="text-danger" href="ShowDB.php">View</a></li>
+              <li class="mt-2"><a class="text-danger" href="AddTableOptions.php">Insert</a></li>
+              <li class="mt-2"><a class="text-danger" href="UpdateTableOptions.php">Update</a></li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-md-12 col-12">
+            <h4>Important Links
+            </h4>
+            <ul style="list-style-type: none;" class="mt-2">
+              <li class="mt-2"><a class="text-danger" href="DeleteTableOptions.php">Delete</a></li>
+              <li class="mt-2"><a class="text-danger" href="SQLOperation.php">SQL Operations</a></li>
+              <li class="mt-2"><a class="text-danger" href="AboutDeveloper.php">About Developer</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 col-12">
+            <h4>Get In Touch
+            </h4>
+            <ul style="list-style-type: none;" class="mt-2 text-danger">
+              <li class="mt-2">Dhaka, Bangladesh</li>
+              <li class="mt-2">mazbaur15-2837@diu.edu.bd</li>
+              <li class="mt-2">
+                +8801796228391</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="background-color: rgba(0, 0, 0, 0.2);">
+  <hr class="text-white">
+  </div>
+  <section>
+    <!-- Copyright -->
+    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
+    </div>
+    <!-- Copyright -->
+  </section>
+
+
   <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
