@@ -87,6 +87,53 @@
     </Section>
 
     <!-- Footer -->
+  <!-- Footer -->
+  <section>
+    <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer">
+      <div class="container">
+        <div class="row py-5 text-white">
+          <div class="col-lg-3 col-md-12 col-12">
+            <img class="img-fluid" src="Icons/Foot.png" alt="Footer Img">
+            <p>
+              Moviebuzz is an online movie information platform where you can find movie details easily. A project designed for learning purposes. This project is under Database Management System Lab.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <h4 class="mx-4">Important Links</h4>
+            <ul style="list-style-type: none;" class="mt-2 text-danger">
+              <li class="mt-2"><a class="text-danger" href="ShowDB.php">View</a></li>
+              <li class="mt-2"><a class="text-danger" href="AddTableOptions.php">Insert</a></li>
+              <li class="mt-2"><a class="text-danger" href="UpdateTableOptions.php">Update</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <h4 class="mx-4">Important Links</h4>
+            <ul style="list-style-type: none;" class="mt-2">
+              <li class="mt-2"><a class="text-danger" href="DeleteTableOptions.php">Delete</a></li>
+              <li class="mt-2"><a class="text-danger" href="SQLOperation.php">SQL Operations</a></li>
+              <li class="mt-2"><a class="text-danger" href="AboutDeveloper.php">About Developer</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 col-12">
+            <h4 class="mx-4">Get In Touch</h4>
+            <ul style="list-style-type: none;" class="mt-2 text-danger">
+              <li class="mt-2">Dhaka, Bangladesh</li>
+              <li class="mt-2">mazbaur15-2837@diu.edu.bd</li>
+              <li class="mt-2">
+                +8801796228391</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <hr class="text-white">
+
+
+
     <!-- Copyright -->
     <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2021 Copyright:
