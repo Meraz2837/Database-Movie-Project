@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
   <title>Moviebuzz - Average</title>
 </head>
 <body>

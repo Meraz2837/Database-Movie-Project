@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Display all records from Database</title>
+  <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
+  <title>Moviebuzz - NOT IN</title>
 </head>
 <body>
 
@@ -22,9 +23,7 @@
 <?php
 
 include "dbConn.php"; // Using database connection file here
-
-$records = mysqli_query($db," select * from movie where title not in ('Muicize','Foster')"); // fetch data from database
-
+$records = mysqli_query($db," SELECT * FROM movie WHERE title NOT IN ('Muicize','Foster')"); // fetch data from database
 while($data = mysqli_fetch_array($records))
 {
 ?>

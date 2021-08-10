@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>Display all records from Database</title>
+    <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
+    <title>Movibuzz - Distinct1</title>
 </head>
 
 <body>

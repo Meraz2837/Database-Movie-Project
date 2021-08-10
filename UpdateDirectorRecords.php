@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Display all records from Database</title>
+  <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
+  <title>Moviebuzz - Update Director</title>
 </head>
+
 <body>
 
-<h2>Country Details</h2>
+  <h2>Country Details</h2>
 
-<table border="2">
-  <tr>
-    <td>Director ID</td>
-    <td>Director Name</td>
-    <td>Edit</td>
-  </tr>
+  <table border="2">
+    <tr>
+      <td>Director ID</td>
+      <td>Director Name</td>
+      <td>Edit</td>
+    </tr>
 
-<?php
+    <?php
 
-include "dbConn.php"; // Using database connection file here
+    include "dbConn.php"; // Using database connection file here
 
-$records = mysqli_query($db,"select * from director"); // fetch data from database
+    $records = mysqli_query($db, "select * from director"); // fetch data from database
 
-while($data = mysqli_fetch_array($records))
-{
-?>
-  <tr>
-    <td><?php echo $data['directorId']; ?></td>
-    <td><?php echo $data['Director_name']; ?></td>  
-    <td><a href="UpdateDirector.php?id=<?php echo $data['directorId']; ?>">Edit</a></td>
-  </tr>	
-<?php
-}
-?>
-</table>
+    while ($data = mysqli_fetch_array($records)) {
+    ?>
+      <tr>
+        <td><?php echo $data['directorId']; ?></td>
+        <td><?php echo $data['Director_name']; ?></td>
+        <td><a href="UpdateDirector.php?id=<?php echo $data['directorId']; ?>">Edit</a></td>
+      </tr>
+    <?php
+    }
+    ?>
+  </table>
 
 </body>
+
 </html>

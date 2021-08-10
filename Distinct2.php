@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>Display all records from Database</title>
+    <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
+    <title>Moviebuzz - Distinct2</title>
 </head>
 
 <body>
@@ -10,7 +11,9 @@
     <h2>Cast name from moviecast table without duplication</h2>
     <table border="2">
         <tr>
-            <td><h5>Cast name without duplication</h5></td>
+            <td>
+                <h5>Cast name without duplication</h5>
+            </td>
         </tr>
 
         <?php

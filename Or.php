@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Display all records from Database</title>
+  <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
+  <title>Moviebuzz - OR</title>
 </head>
 <body>
 
