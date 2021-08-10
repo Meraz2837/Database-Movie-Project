@@ -174,7 +174,7 @@
 
   <div class="container bg-dark">
     <div class="row">
-      <div style="padding:25% 0; padding-right:20px; border-right: 5px solid #ccc;" class="col-md-6 text-white">
+      <div style="padding:35% 0; padding-right:20px; border-right: 5px solid #ccc;" class="col-md-6 text-white">
         <h1>Welcome</h1>
         <h3>To the Biggest Movie Server</h3>
         <h5>By Mazbaur Rashid (192-15-2837)</h5>
@@ -197,6 +197,9 @@
             </li>
             <li>
               <a class="btn btn-danger mt-5" href="SQLOperation.php">SQL Operations</a>
+            </li>
+            <li>
+              <a class="btn btn-danger mt-5" href="AboutDeveloper.php">About Developer</a>
             </li>
           </ul>
           <div style="text-align: right; padding:20% 47.7%">

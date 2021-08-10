@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Display all records from Database</title>
 </head>
-
 <body>
-
     <h2>Movies in Ascending</h2>
     <p>Ordering movies in Ascending order acording to year!</p>
-
     <table border="2">
         <tr>
             <td>Movie Code</td>
@@ -21,13 +17,9 @@
             <td>Runtime</td>
             <td>Movie Title</td>
         </tr>
-
         <?php
-
         include "dbConn.php"; // Using database connection file here
-
         $records = mysqli_query($db, "Select * from movie order by year"); // fetch data from database
-
         while ($data = mysqli_fetch_array($records)) {
         ?>
             <tr>
