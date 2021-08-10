@@ -11,6 +11,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
     <title>Moviebuzz - Mazbaur Rashid</title>
+    <style>
+    body {
+      font-family: Arail, sans-serif;
+    }
+
+    /* Formatting search box */
+    .search-box {
+      width: 300px;
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .search-box input[type="text"] {
+      height: 32px;
+      padding: 5px 10px;
+      border: 1px solid #CCCCCC;
+      font-size: 14px;
+    }
+
+    .result {
+      color: white;
+      background: #dc3545;
+      position: absolute;
+      z-index: 999;
+      top: 100%;
+      left: 0;
+      transition: 0.6s ease;
+    }
+
+    .search-box input[type="text"],
+    .result {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Formatting result items */
+    .result p {
+      margin: 0;
+      padding: 7px 10px;
+      border: 1px solid white;
+      border-top: none;
+      cursor: pointer;
+    }
+
+    .result p:hover {
+      color: #000000;
+      background: #f2f2f2;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.search-box input[type="text"]').on("keyup input", function() {
+        /* Get input value on change */
+        var inputVal = $(this).val();
+        var resultDropdown = $(this).siblings(".result");
+        if (inputVal.length) {
+          $.get("backend-search.php", {
+            term: inputVal
+          }).done(function(data) {
+            // Display the returned data in browser
+            resultDropdown.html(data);
+          });
+        } else {
+          resultDropdown.empty();
+        }
+      });
+
+      // Set search input value on click of result item
+
+      $(document).on("click", ".result p", function() {
+        $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
+        $(this).parent(".result").empty();
+      });
+    });
+  </script>
 </head>
 
 <body class="bg-dark">
@@ -124,7 +201,8 @@
             <h4 class="mx-4">Get In Touch</h4>
             <ul style="list-style-type: none;" class="mt-2 text-danger">
               <li class="mt-2">Dhaka, Bangladesh</li>
-              <li class="mt-2">mazbaur15-2837@diu.edu.bd</li>
+              <li class="mt-2"> <a class="text-danger" href="mailto:mazbaur15-2837@diu.edu.bd">mazbaur15-2837@diu.edu.bd</a></li>
+
               <li class="mt-2">
                 +8801796228391</li>
             </ul>

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
     <link rel="stylesheet" href="Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Moviebuzz - Add country</title>
@@ -101,7 +102,7 @@
                         <h4 class="mx-4">Get In Touch</h4>
                         <ul style="list-style-type: none;" class="mt-2 text-danger">
                             <li class="mt-2">Dhaka, Bangladesh</li>
-                            <li class="mt-2">mazbaur15-2837@diu.edu.bd</li>
+                            <li class="mt-2"> <a class="text-danger" href="mailto:mazbaur15-2837@diu.edu.bd">mazbaur15-2837@diu.edu.bd</a></li>
                             <li class="mt-2">
                                 +8801796228391</li>
                         </ul>

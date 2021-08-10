@@ -33,7 +33,7 @@
 
     .result {
       color: white;
-      background: #0f6efd;
+      background: #dc3545;
       position: absolute;
       z-index: 999;
       top: 100%;
@@ -277,7 +277,8 @@
             <h4 class="mx-4">Get In Touch</h4>
             <ul style="list-style-type: none;" class="mt-2 text-danger">
               <li class="mt-2">Dhaka, Bangladesh</li>
-              <li class="mt-2">mazbaur15-2837@diu.edu.bd</li>
+              <li class="mt-2"> <a class="text-danger" href="mailto:mazbaur15-2837@diu.edu.bd">mazbaur15-2837@diu.edu.bd</a></li>
+
               <li class="mt-2">
                 +8801796228391</li>
             </ul>
