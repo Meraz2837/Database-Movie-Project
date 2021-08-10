@@ -250,12 +250,17 @@
       <ul class="list border border-danger">
         <li>
         <h4 class="text-white m-3">Showing movies records of Muicize and Foster</h4>
-          <a class="btn btn-danger m-b" href="Or.php">OR</a>
+          <a class="btn btn-danger" href="Or.php">OR</a>
         </li>
         <hr class="text-white">
         <li>
           <h4 class="text-white m-3">Showing movies without Muicize and Foster</h4>
-          <a class="btn btn-danger mb-5" href="NotIn.php">NOT IN</a>
+          <a class="btn btn-danger" href="NotIn.php">NOT IN</a>
+        </li>
+        <hr class="text-white">
+        <li>
+          <h4 class="text-white m-3">Showing movies From 2015 to 2019</h4>
+          <a class="btn btn-danger mb-5" href="Between.php">Between</a>
         </li>
       </ul>
     </div>

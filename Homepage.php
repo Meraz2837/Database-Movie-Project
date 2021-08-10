@@ -175,7 +175,7 @@
   <div class="container bg-dark">
     <div class="row">
       <div style="padding:35% 0; padding-right:20px; border-right: 5px solid #ccc;" class="col-md-6 text-white">
-        <h1>Welcome</h1>
+        <h1 class="text-danger">Welcome</h1>
         <h3>To the Biggest Movie Server</h3>
         <h5>By Mazbaur Rashid (192-15-2837)</h5>
       </div>
@@ -258,7 +258,7 @@
     <!-- Copyright -->
     <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2021 Copyright:
-      <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
+      <a class="text-white" target="_blank" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
     </div>
     <!-- Copyright -->
   </section>
