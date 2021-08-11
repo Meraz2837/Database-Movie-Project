@@ -19,7 +19,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <h2>Movies in Descending</h2>
     <p>Ordering movies in Descending order acording to year!</p>
 
-    <table border="2">
+    <table border="5">
         <tr>
             <td>Movie Code</td>
             <td>Country Code</td>

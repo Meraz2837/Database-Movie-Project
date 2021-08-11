@@ -20,7 +20,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
   <h2>Movie Genre Info</h2>
 
-  <table border="2">
+  <table border="5">
     <tr>
       <td>Movie ID</td>
       <td>Movie Genre Name</td>

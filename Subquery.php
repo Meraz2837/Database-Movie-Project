@@ -20,7 +20,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
   <h2>Movies Released in Bangladesh</h2>
 
-  <table border="2">
+  <table border="5">
     <tr>
       <td>Movie Name</td>
       <td>Country</td>

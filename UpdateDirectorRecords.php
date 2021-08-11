@@ -20,7 +20,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
   <h2>Country Details</h2>
 
-  <table border="2">
+  <table border="5">
     <tr>
       <td>Director ID</td>
       <td>Director Name</td>

@@ -20,7 +20,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <h2>Inner Join</h2>
 
-    <table border="2">
+    <table border="5">
         <tr>
             <td>Number Of Movies</td>
             <td>Year</td>

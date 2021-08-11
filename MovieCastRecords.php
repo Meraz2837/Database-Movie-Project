@@ -16,7 +16,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 <body>
   <h2>Movie Cast Details</h2>
-  <table border="2">
+  <table border="5">
     <tr>
       <td>Movie Cast ID</td>
       <td>Movie ID</td>
