@@ -20,7 +20,7 @@
 
         include "dbConn.php"; // Using database connection file here
 
-        $records = mysqli_query($db, "select movie.movieid, movie.title from movie left join moviegenre on movie.movieid=moviegenre.movieid"); // fetch data from database
+        $records = mysqli_query($db, "SELECT movie.movieid, movie.title FROM movie LEFT JOIN moviegenre ON movie.movieid=moviegenre.movieid"); // fetch data from database
 
         while ($data = mysqli_fetch_array($records)) {
         ?>

@@ -150,7 +150,7 @@
     <div class="card my-3 mx-auto bg-dark border-danger" style="max-width: 1800px;">
       <div class="row g-0">
         <div class="col-md-4 bg-dark">
-          <img src="Icons/Meraz.png" class="img-fluid rounded-start" alt="Meraz">
+          <img src="Icons/MerazIcon.png" class="img-fluid rounded-start" alt="Meraz">
         </div>
         <div class="col-md-8 my-auto">
           <div class="card-body text-white">

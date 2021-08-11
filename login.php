@@ -67,12 +67,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             header("location: Homepage.php");
                         } else {
                             // Password is not valid, display a generic error message
-                            $login_err = "Invalid username or password.";
+                            $login_err = "Invalid username or password!";
                         }
                     }
                 } else {
                     // Username doesn't exist, display a generic error message
-                    $login_err = "Invalid username or password.";
+                    $login_err = "Invalid username or password!";
                 }
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <?php
         if (!empty($login_err)) {
-            echo '<div class="alert alert-danger">' . $login_err . '</div>';
+            echo '<div class="alert alert-danger bg-dark text-danger">' . $login_err . '</div>';
         }
         ?>
 
@@ -141,10 +141,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p>Don't have an account? <a class="text-danger" href="registration.php">Sign up now</a>.</p>
         </form>
     </div>
+    <!-- Copyright -->
     <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2021 Copyright:
         <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
     </div>
+    <!-- Copyright -->
 </body>
 
 </html>

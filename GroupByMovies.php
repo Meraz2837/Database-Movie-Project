@@ -20,7 +20,7 @@
 
         include "dbConn.php"; // Using database connection file here
 
-        $records = mysqli_query($db, "select count(movieid), year from movie group by year"); // fetch data from database
+        $records = mysqli_query($db, "SELECT COUNT(movieid), year FROM movie GROUP BY year"); // fetch data from database
 
         while ($data = mysqli_fetch_array($records)) {
         ?>
