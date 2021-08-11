@@ -1,9 +1,9 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
@@ -159,15 +159,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
     <form class="text-white text-center my-5" action="InsertCountryP.php" method="post">
-        <p>
-            <label for="countryCode">Country Code:</label>
-            <input type="text" name="countryId" id="countryCode">
-        </p>
-        <p>
-            <label for="Country_Name">Country Name:</label>
-            <input type="text" name="countryName" id="Country_Name">
-        </p>
-        <input style="width: 300px;" class="btn btn-danger" type="submit" value="Submit">
+        <label for="countryCode">Country Code:</label>
+        <input type="text" name="countryId" id="countryCode">
+        <label for="Country_Name">Country Name:</label>
+        <input type="text" name="countryName" id="Country_Name">
+        <br><input style="width: 300px;" class="btn btn-danger mt-3" type="submit" value="Submit">
     </form>
     <!-- Footer -->
     <!-- Footer -->

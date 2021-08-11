@@ -1,11 +1,11 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
 }
 ?>
 <!DOCTYPE html>
@@ -159,15 +159,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
   <form class="text-white text-center my-5" action="InsertMovieGenrep.php" method="post">
-    <p>
-      <label for="Movie_ID">Movie ID: </label>
-      <input type="text" name="movieId" id="Movie_ID">
-    </p>
-    <p>
-      <label for="Genre_Name">Genre Name: </label>
-      <input type="text" name="genreName" id="Genre_Name">
-    </p>
-    <input style="width: 300px;" class="btn btn-danger" class="btn btn-primary" class="btn btn-primary" type="submit" value="Submit">
+
+    <label for="Movie_ID">Movie ID: </label>
+    <input type="text" name="movieId" id="Movie_ID">
+
+    <label for="Genre_Name">Genre Name: </label>
+    <input type="text" name="genreName" id="Genre_Name">
+
+    <br><input style="width: 300px;" class="btn btn-danger mt-3" type="submit" value="Submit">
   </form>
   <!-- Footer -->
   <!-- Footer -->
@@ -231,4 +230,5 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 </body>
+
 </html>

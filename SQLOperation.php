@@ -281,7 +281,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <hr class="text-white">
         <li>
           <h4 class="text-white m-3">Showing movies From 2015 to 2019</h4>
-          <a class="btn btn-danger mb-3" href="Between.php">Between</a>
+          <a class="btn btn-danger mb-3" href="Between.php">BETWEEN</a>
         </li>
       </ul>
     </div>

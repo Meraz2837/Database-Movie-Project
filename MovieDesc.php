@@ -1,26 +1,27 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
     <title>Moviebuzz - MovieDesc</title>
 </head>
-<body>
 
-    <h2>Movies in Descending</h2>
-    <p>Ordering movies in Descending order acording to year!</p>
+<body style="background: #212529; color:white;">
 
-    <table border="5">
-        <tr>
+    <h2 align="center">Movie in descending order</h2>
+    <p align = "center">Ordering movies in Descending order acording to year!</p>
+    <table align="center" border="5" BORDERCOLOR=WHITE>
+        <tr border="1" BORDERCOLOR=WHITE>
             <td>Movie Code</td>
             <td>Country Code</td>
             <td>Director Code</td>
@@ -53,12 +54,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         }
         ?>
     </table>
-    <!-- Footer -->
-    <!-- Copyright -->
-    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
-        <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
-    </div>
+
 </body>
 
 </html>

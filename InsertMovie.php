@@ -1,9 +1,9 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
@@ -159,39 +159,33 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
     <form class="text-white text-center my-5" action="InsertMovieP.php" method="post">
-        <p>
-            <label for="Movie_ID">Movie ID: </label>
-            <input type="text" name="movieId" id="MovieID">
-        </p>
-        <p>
-            <label for="Country_ID">Country Code: </label>
-            <input type="text" name="countryId" id="Country_ID">
-        </p>
-        <p>
-            <label for="Director_ID">Director ID: </label>
-            <input type="text" name="directorId" id="Director_ID">
-        </p>
-        <p>
-            <label for="Budget">Budget: </label>
-            <input type="text" name="budget" id="Budget">
-        </p>
-        <p>
+        <label for="Movie_ID">Movie ID: </label>
+        <input type="text" name="movieId" id="MovieID">
+
+        <label for="Country_ID">Country Code: </label>
+        <input type="text" name="countryId" id="Country_ID">
+
+        <label for="Director_ID">Director ID: </label>
+        <input type="text" name="directorId" id="Director_ID">
+
+        <label for="Budget">Budget: </label>
+        <input type="text" name="budget" id="Budget">
+
+        <br>
+        <div class="my-3">
             <label for="Year">Year: </label>
             <input type="text" name="year" id="Year">
-        </p>
-        <p>
+
             <label for="IMDB">IMDB Rating: </label>
             <input type="text" name="IMDBrating" id="IMDB">
-        </p>
-        <p>
+
             <label for="Time">Runtime: </label>
             <input type="text" name="runtime" id="Time">
-        </p>
-        <p>
+
             <label for="Movie_Name">Movie Name: </label>
             <input type="text" name="title" id="Movie_Name">
-        </p>
-        <input style="width: 300px;" class="btn btn-danger" type="submit" value="Submit">
+        </div>
+        <br><input style="width: 300px;" class="btn btn-danger mt-3" type="submit" value="Submit">
     </form>
     <!-- Footer -->
     <!-- Footer -->

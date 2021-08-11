@@ -1,9 +1,9 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
@@ -16,11 +16,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Moviebuzz - MovieAsc</title>
 </head>
 
-<body>
-    <h2>Movies in Ascending</h2>
-    <p>Ordering movies in Ascending order acording to year!</p>
-    <table border="5">
-        <tr>
+
+<body style="background: #212529; color:white;">
+
+    <h2 align="center">Movie in ascending order</h2>
+    <p align="center">Ordering movies in Ascending order acording to year!</p>
+    <table align="center" border="5" BORDERCOLOR=WHITE>
+        <tr border="1" BORDERCOLOR=WHITE>
             <td>Movie Code</td>
             <td>Country Code</td>
             <td>Director Code</td>

@@ -1,11 +1,11 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
 }
 ?>
 <!DOCTYPE html>
@@ -159,15 +159,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
   <form class="text-white text-center my-5" action="InsertDirectorP.php" method="post">
-    <p>
-      <label for="DirectorID">Director ID:</label>
-      <input type="text" name="directorId" id="DirectorID">
-    </p>
-    <p>
-      <label for="DirectorName">Director Name:</label>
-      <input type="text" name="Director_name" id="DirectorName">
-    </p>
-    <input style="width: 300px;" class="btn btn-danger" type="submit" value="Submit">
+    <label for="DirectorID">Director ID:</label>
+    <input type="text" name="directorId" id="DirectorID">
+    <label for="DirectorName">Director Name:</label>
+    <input type="text" name="Director_name" id="DirectorName">
+    <br><input style="width: 300px;" class="btn btn-danger mt-3" type="submit" value="Submit">
   </form>
   <!-- Footer -->
   <!-- Footer -->

@@ -16,12 +16,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <title>Moviebuzz - Movie</title>
 </head>
 
-<body>
+<body style="background: #212529; color:white;">
 
-  <h2>Movie Details</h2>
+<h2 align = "center">Movie Details</h2>
 
-  <table border="5">
-    <tr>
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+      <tr border = "1" BORDERCOLOR=WHITE>
       <td>Movie Code</td>
       <td>Country Code</td>
       <td>Director Code</td>

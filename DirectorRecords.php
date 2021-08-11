@@ -13,13 +13,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <head>
   <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
-  <title>Moviebuzz - Director</title>
+  <title>Moviebuzz - Director Delete</title>
 </head>
 
-<body>
-  <h2>Director Details</h2>
-  <table border="5">
-    <tr>
+<body style="background: #212529; color:white;">
+
+<h2 align = "center">Director Details</h2>
+
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+      <tr border = "1" BORDERCOLOR=WHITE>
       <td>Director ID</td>
       <td>Director Name</td>
       <td>Delete</td>
@@ -36,7 +38,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <tr>
         <td><?php echo $data['directorId']; ?></td>
         <td><?php echo $data['Director_name']; ?></td>
-        <td><a href="DirectorDelete.php?id=<?php echo $data['directorId']; ?>">Delete</a></td>
+        <td><a style="color: #dc3545;" href="DirectorDelete.php?id=<?php echo $data['directorId']; ?>">Delete</a></td>
       </tr>
     <?php
     }

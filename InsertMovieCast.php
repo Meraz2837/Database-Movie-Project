@@ -161,19 +161,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
   <form class="text-white text-center my-5" action="InsertMovieCastp.php" method="post">
-    <p>
+
       <label for="Movie_cast_ID">MovieCast ID:</label>
       <input type="text" name="moviecastId" id="Movie_cast_ID">
-    </p>
-    <p>
+  
       <label for="Movie_ID">Movie ID:</label>
       <input type="text" name="movieId" id="Movie_ID">
-    </p>
-    <p>
+ 
       <label for="Cast_name">Cast Name:</label>
       <input type="text" name="Castname" id="Cast_name">
     </p>
-    <input style="width: 300px;" class="btn btn-danger" class="btn btn-primary" type="submit" value="Submit">
+    <br><input style="width: 300px;" class="btn btn-danger mt-3" type="submit" value="Submit">
   </form>
   <!-- Footer -->
   <!-- Footer -->

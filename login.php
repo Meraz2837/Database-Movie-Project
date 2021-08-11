@@ -109,38 +109,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body class="bg-dark text-white">
-    <div class="pt-5 container text-center">
-        <h1>Welcome to the Biggest Movie Database!</h1>
-        <h5>By Md. Mazbaur Rashid (192-15-2837)</h5>
+
+
+    <div class="card bg-dark text-white">
+        <img src="Image/Login Cover.gif" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <div style="margin-top: 9%;">
+                <div class="pt-5 container text-center">
+                    <h1>Welcome to the Biggest Movie Database!</h1>
+                    <h5>By Md. Mazbaur Rashid (192-15-2837)</h5>
+                </div>
+                <div class="wrapper mx-auto">
+
+                    <h2 class="text-danger">Admin Login</h2>
+                    <p>Please login with the details asked.</p>
+
+                    <?php
+                    if (!empty($login_err)) {
+                        echo '<div class="alert alert-danger bg-dark text-danger">' . $login_err . '</div>';
+                    }
+                    ?>
+
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                            <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                            <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-danger" value="Login">
+                        </div>
+                        <p>Don't have an account? <a class="text-danger" href="registration.php">Sign up now</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="wrapper mx-auto">
 
-        <h2 class="text-danger">Admin Login</h2>
-        <p>Please login with the details asked.</p>
 
-        <?php
-        if (!empty($login_err)) {
-            echo '<div class="alert alert-danger bg-dark text-danger">' . $login_err . '</div>';
-        }
-        ?>
-
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-danger" value="Login">
-            </div>
-            <p>Don't have an account? <a class="text-danger" href="registration.php">Sign up now</a>.</p>
-        </form>
-    </div>
     <!-- Copyright -->
     <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2021 Copyright:

@@ -1,11 +1,11 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
 }
 ?>
 <!DOCTYPE html>
@@ -16,12 +16,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <title>Moviebuzz - Maximum Movie Budget</title>
 </head>
 
-<body>
+<body style="background: #212529; color:white;">
 
-  <h2>Maximum Movie Budget</h2>
+  <h2 align="center">Maximum Movie Budget</h2>
 
-  <table border="5">
-    <tr>
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+    <tr border="1" BORDERCOLOR=WHITE>
       <td>Maximum Movie Budget</td>
     </tr>
 

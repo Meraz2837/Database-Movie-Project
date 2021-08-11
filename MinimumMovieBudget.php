@@ -16,12 +16,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <title>Moviebuzz - Minimum Movie Budget</title>
 </head>
 
-<body>
+<body style="background: #212529; color:white;">
 
-  <h2>Minimum Movie Budget</h2>
+  <h2 align="center">Minimum Movie Budget</h2>
 
-  <table border="5">
-    <tr>
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+    <tr border="1" BORDERCOLOR=WHITE>
       <td>Minimum Movie Budget</td>
     </tr>
 

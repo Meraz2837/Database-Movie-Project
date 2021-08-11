@@ -14,10 +14,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
   <title>Moviebuzz - Moviecast Delete</title>
 </head>
-<body>
-  <h2>Movie Cast Details</h2>
-  <table border="5">
-    <tr>
+<body style="background: #212529; color:white;">
+
+<h2 align = "center">Cast Details</h2>
+
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+      <tr border = "1" BORDERCOLOR=WHITE>
       <td>Movie Cast ID</td>
       <td>Movie ID</td>
       <td>Name</td>
@@ -36,7 +38,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <td><?php echo $data['moviecastId']; ?></td>
         <td><?php echo $data['movieId']; ?></td>
         <td><?php echo $data['Castname']; ?></td>
-        <td><a href="MovieCastDelete.php?id=<?php echo $data['moviecastId']; ?>">Delete</a></td>
+        <td><a style="color: #dc3545;" href="MovieCastDelete.php?id=<?php echo $data['moviecastId']; ?>">Delete</a></td>
       </tr>
     <?php
     }

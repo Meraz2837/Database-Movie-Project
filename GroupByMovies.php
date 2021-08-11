@@ -1,9 +1,9 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
@@ -16,12 +16,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Movibuzz - Group By</title>
 </head>
 
-<body>
+<<body style="background: #212529; color:white;">
 
-    <h2>Inner Join</h2>
+    <h2 align="center">Group by</h2>
 
-    <table border="5">
-        <tr>
+    <table align="center" border="5" BORDERCOLOR=WHITE>
+        <tr border="1" BORDERCOLOR=WHITE>
             <td>Number Of Movies</td>
             <td>Year</td>
         </tr>
@@ -35,19 +35,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         while ($data = mysqli_fetch_array($records)) {
         ?>
             <tr>
-                <td><?php echo $data['count(movieid)']; ?></td>
+                <td><?php echo $data['COUNT(movieid)']; ?></td>
                 <td><?php echo $data['year']; ?></td>
             </tr>
         <?php
         }
         ?>
     </table>
-    <!-- Footer -->
-    <!-- Copyright -->
-    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
-        <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
-    </div>
-</body>
+    </body>
 
 </html>

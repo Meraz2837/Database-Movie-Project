@@ -16,12 +16,12 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
   <title>Moviebuzz - Subquery (Bangladesh)</title>
 </head>
 
-<body>
+<body style="background: #212529; color:white;">
 
-  <h2>Movies Released in Bangladesh</h2>
+  <h2 align="center">Movies Released in Bangladesh</h2>
 
-  <table border="5">
-    <tr>
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+    <tr border="1" BORDERCOLOR=WHITE>
       <td>Movie Name</td>
       <td>Country</td>
     </tr>
@@ -30,13 +30,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
     include "dbConn.php"; // Using database connection file here
 
-    $records = mysqli_query($db, "SELECT countryName, title FROM country, movie WHERE movie.countryId = country.countryId AND country.countryId = (SELECT countryId FROM country WHERE countryName = 'Bangladesh')"); // fetch data from database
+    $records = mysqli_query($db, "SELECT title, countryName FROM country, movie WHERE movie.countryId = country.countryId AND country.countryId = (SELECT countryId FROM country WHERE countryName = 'Bangladesh')"); // fetch data from database
 
     while ($data = mysqli_fetch_array($records)) {
     ?>
       <tr>
-        <td><?php echo $data['countryName']; ?></td>
         <td><?php echo $data['title']; ?></td>
+        <td><?php echo $data['countryName']; ?></td>
       </tr>
     <?php
     }

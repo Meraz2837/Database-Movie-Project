@@ -13,14 +13,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <head>
   <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
-  <title>Moviebuzz - Country</title>
+  <title>Moviebuzz - Country Delete</title>
 </head>
-<body>
+<body style="background: #212529; color:white;">
 
-  <h2>Country</h2>
+<h2 align = "center">Country Details</h2>
 
-  <table border="5">
-    <tr>
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+      <tr border = "1" BORDERCOLOR=WHITE>
       <td>Country Code</td>
       <td>Country Name</td>
       <td>Delete</td>
@@ -37,7 +37,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <tr>
         <td><?php echo $data['countryId']; ?></td>
         <td><?php echo $data['countryName']; ?></td>
-        <td><a href="CountryDelete.php?id=<?php echo $data['countryId']; ?>">Delete</a></td>
+        <td><a style="color: #dc3545;" href="CountryDelete.php?id=<?php echo $data['countryId']; ?>">Delete</a></td>
       </tr>
     <?php
     }

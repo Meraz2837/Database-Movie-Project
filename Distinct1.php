@@ -1,9 +1,9 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
@@ -16,11 +16,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Movibuzz - Distinct1</title>
 </head>
 
-<body>
+<body style="background: #212529; color:white;">
 
-    <h2>Year from movie table without duplication</h2>
-    <table border="5">
-        <tr>
+    <h2 align="center">Year from movie without duplication</h2>
+
+    <table align="center" border="5" BORDERCOLOR=WHITE>
+        <tr border="1" BORDERCOLOR=WHITE>
             <td>Year without duplication</td>
         </tr>
 
@@ -39,12 +40,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         }
         ?>
     </table>
-    <!-- Footer -->
-    <!-- Copyright -->
-    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
-        <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
-    </div>
 </body>
 
 </html>
