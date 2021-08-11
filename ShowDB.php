@@ -1,17 +1,27 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
 <!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="Style.css">
-    <title>Moviebuzz - Show Database</title>
-    <style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="Style.css">
+  <title>Moviebuzz - Show Database</title>
+  <style>
     body {
       font-family: Arail, sans-serif;
     }
@@ -92,7 +102,7 @@
 
 <body class="bg-dark">
 
-<nav style="background-color: rgba(0, 0, 0, 0.2) !important;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav style="background-color: rgba(0, 0, 0, 0.2) !important;" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="Homepage.php"><img class="img-fluid icon" src="Icons/Copy of Movie.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,31 +160,31 @@
   </nav>
 
 
-    <Section>
-        <div class="container text-center mt-3">
-            <ul class="list border border-danger">
-                <h1 class="text-white my-3">Wanna see database?<br>Just hit on a table!</h1>
-                <li>
-                    <a class="btn btn-danger mt-5" href="ShowCountryTable.php">Country Table</a>
-                </li>
-                <li>
-                    <a class="btn btn-danger mt-5" href="ShowDirectorTable.php">Director Table</a>
-                </li>
-                <li>
-                    <a class="btn btn-danger mt-5" href="ShowMovieTable.php">Movie Table</a>
-                </li>
-                <li>
-                    <a class="btn btn-danger mt-5" href="ShowMoviecastTable.php">Moviecast Table</a>
-                </li>
-                <li>
-                    <a class="btn btn-danger my-5" href="ShowMovieGenreTable.php">Movie Genre Table</a>
-                </li>
+  <Section>
+    <div class="container text-center mt-3">
+      <ul class="list border border-danger">
+        <h1 class="text-white my-3">Wanna see database?<br>Just hit on a table!</h1>
+        <li>
+          <a class="btn btn-danger mt-5" href="ShowCountryTable.php">Country Table</a>
+        </li>
+        <li>
+          <a class="btn btn-danger mt-5" href="ShowDirectorTable.php">Director Table</a>
+        </li>
+        <li>
+          <a class="btn btn-danger mt-5" href="ShowMovieTable.php">Movie Table</a>
+        </li>
+        <li>
+          <a class="btn btn-danger mt-5" href="ShowMoviecastTable.php">Moviecast Table</a>
+        </li>
+        <li>
+          <a class="btn btn-danger my-5" href="ShowMovieGenreTable.php">Movie Genre Table</a>
+        </li>
 
-            </ul>
-        </div>
-    </Section>
+      </ul>
+    </div>
+  </Section>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <!-- Footer -->
   <section>
     <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer">
@@ -218,25 +228,25 @@
     </div>
   </section>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <hr class="text-white">
 
 
 
-    <!-- Copyright -->
-    <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
-        <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
-    </div>
+  <!-- Copyright -->
+  <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
+  </div>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->

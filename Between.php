@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
 <head>
   <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
   <title>Moviebuzz - BETWEEN</title>
