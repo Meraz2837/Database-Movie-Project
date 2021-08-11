@@ -7,6 +7,9 @@ body{
 .icon{
     width: 50px;
 }
+.iconm{
+    width: 45px;
+}
 ul.list{
     list-style-type: none !important;
 }

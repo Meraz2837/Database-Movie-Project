@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="Style.css">
   <!-- Bootstrap CSS -->
   <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="Style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Moviebuzz</title>
   <style>
     body {
@@ -114,31 +114,41 @@
           <li class="nav-item">
             <a class="nav-link" href="DeleteTableOptions.php">Delete From Database</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="SQLOperation.php">SQL Operations</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               More
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="SQLOperation.php">SQL Operations</a></li>
               <li><a class="dropdown-item" href="AboutDeveloper.php">About Developer</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="logout.php">Logout</a>
-          </li>
+
+
         </ul>
         <div class="search-box">
           <input type="text" autocomplete="off" placeholder="Search movie" />
           <div class="result"></div>
+        </div>
+        <div class="nav-item dropdown text white">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="img-fluid" style="width: 40px;" src="Icons/Profile.png" alt="PP">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <hr>
+            <li>
+              <h5 class="text-center text-white">Mazbaur Rashid</h5>
+            </li>
+            <hr class="text-white">
+            <li><a class="dropdown-item" href="logout.php">Log out</a></li>
+            <li><a class="dropdown-item" href="reset-password.php">Reset Password</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- Image Careosal -->
-
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -200,9 +210,6 @@
             </li>
             <li>
               <a class="btn btn-danger mt-5" href="AboutDeveloper.php">About Developer</a>
-            </li>
-            <li>
-              <a href="reset-password.php" class="btn btn-secondary mt-5 text-white">Reset Your Password</a>
             </li>
           </ul>
           <div style="text-align: right; padding:20% 47.7%">
