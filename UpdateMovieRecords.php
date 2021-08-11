@@ -17,12 +17,12 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
   <title>Moviebuzz - Update Movie</title>
 </head>
 
-<body>
+<body style="background: #212529; color:white;">
 
-  <h2>Country Details</h2>
+<h2 align = "center">Genre Details</h2>
 
-  <table border="5">
-    <tr>
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+      <tr border = "1" BORDERCOLOR=WHITE>
       <td>Movie ID</td>
       <td>Country ID</td>
       <td>Director ID</td>
@@ -51,7 +51,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <td><?php echo $data['IMDBrating']; ?></td>
         <td><?php echo $data['runtime']; ?></td>
         <td><?php echo $data['title']; ?></td>
-        <td><a href="UpdateMovies.php?id=<?php echo $data['movieId']; ?>">Update</a></td>
+        <td><a style="color: #dc3545;" href="UpdateMovies.php?id=<?php echo $data['movieId']; ?>">Update</a></td>
       </tr>
     <?php
     }

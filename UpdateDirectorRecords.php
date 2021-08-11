@@ -16,12 +16,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <title>Moviebuzz - Update Director</title>
 </head>
 
-<body>
+<body style="background: #212529; color:white;">
 
-  <h2>Country Details</h2>
+<h2 align = "center">Director Details</h2>
 
-  <table border="5">
-    <tr>
+  <table align="center" border="5" BORDERCOLOR=WHITE>
+      <tr border = "1" BORDERCOLOR=WHITE>
       <td>Director ID</td>
       <td>Director Name</td>
       <td>Update</td>
@@ -38,7 +38,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <tr>
         <td><?php echo $data['directorId']; ?></td>
         <td><?php echo $data['Director_name']; ?></td>
-        <td><a href="UpdateDirector.php?id=<?php echo $data['directorId']; ?>">Update</a></td>
+        <td><a style="color: #dc3545;" href="UpdateDirector.php?id=<?php echo $data['directorId']; ?>">Update</a></td>
       </tr>
     <?php
     }
