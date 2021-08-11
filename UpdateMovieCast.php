@@ -24,7 +24,7 @@ if(isset($_POST['update'])) // when click on Update button
     $Movieid = $_POST['movieId'];
     $Castname = $_POST['Castname'];
 	
-    $edit = mysqli_query($db,"update moviecast set moviecastId = '$Moviecastid', movieId='$Movieid' , Castname='$Castname' where moviecastId='$id'");
+    $edit = mysqli_query($db,"UPDATE moviecast SET moviecastId = '$Moviecastid', movieId='$Movieid' , Castname='$Castname' WHERE moviecastId='$id'");
 	
     if($edit)
     {

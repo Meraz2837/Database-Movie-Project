@@ -148,7 +148,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
             <hr>
             <li>
-              <h5 class="text-center text-white">Mazbaur Rashid</h5>
+              <h5 class="text-center text-white"><b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h5>
             </li>
             <hr class="text-white">
             <li><a class="dropdown-item" href="logout.php">Log out</a></li>

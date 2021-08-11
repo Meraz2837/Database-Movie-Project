@@ -23,7 +23,7 @@ if(isset($_POST['update'])) // when click on Update button
     $Countrycode = $_POST['directorId'];
     $Countryname = $_POST['Director_name'];
 	
-    $edit = mysqli_query($db,"update director set directorId='$Countrycode', Director_name='$Countryname' where directorId='$id'");
+    $edit = mysqli_query($db,"UPDATE director SET directorId='$Countrycode', Director_name='$Countryname' WHERE directorId='$id'");
 	
     if($edit)
     {
