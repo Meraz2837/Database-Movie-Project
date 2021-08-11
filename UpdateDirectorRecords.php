@@ -24,7 +24,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <tr>
       <td>Director ID</td>
       <td>Director Name</td>
-      <td>Edit</td>
+      <td>Update</td>
     </tr>
 
     <?php
@@ -38,7 +38,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <tr>
         <td><?php echo $data['directorId']; ?></td>
         <td><?php echo $data['Director_name']; ?></td>
-        <td><a href="UpdateDirector.php?id=<?php echo $data['directorId']; ?>">Edit</a></td>
+        <td><a href="UpdateDirector.php?id=<?php echo $data['directorId']; ?>">Update</a></td>
       </tr>
     <?php
     }

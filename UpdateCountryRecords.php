@@ -24,7 +24,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <tr>
       <td>Country Code</td>
       <td>Country Name</td>
-      <td>Edit</td>
+      <td>Update</td>
     </tr>
 
     <?php
@@ -38,7 +38,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <tr>
         <td><?php echo $data['countryId']; ?></td>
         <td><?php echo $data['countryName']; ?></td>
-        <td><a href="UpdateCountry.php?id=<?php echo $data['countryId']; ?>">Edit</a></td>
+        <td><a href="UpdateCountry.php?id=<?php echo $data['countryId']; ?>">Update</a></td>
       </tr>
     <?php
     }

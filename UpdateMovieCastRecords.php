@@ -26,7 +26,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
       <td>Movie Cast ID</td>
       <td>Movie ID</td>
       <td>Cast Name</td>
-      <td>Edit</td>
+      <td>Update</td>
     </tr>
 
     <?php
@@ -41,7 +41,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <td><?php echo $data['moviecastId']; ?></td>
         <td><?php echo $data['movieId']; ?></td>
         <td><?php echo $data['Castname']; ?></td>
-        <td><a href="UpdateMovieCast.php?id=<?php echo $data['moviecastId']; ?>">Edit</a></td>
+        <td><a href="UpdateMovieCast.php?id=<?php echo $data['moviecastId']; ?>">Update</a></td>
       </tr>
     <?php
     }

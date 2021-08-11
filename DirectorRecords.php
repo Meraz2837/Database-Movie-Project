@@ -42,12 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     }
     ?>
   </table>
-  <!-- Footer -->
   <!-- Copyright -->
-  <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
-  </div>
 </body>
 
 </html>

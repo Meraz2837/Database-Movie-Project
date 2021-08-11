@@ -31,7 +31,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
       <td>IMDB Rating</td>
       <td>Runtime</td>
       <td>Title</td>
-      <td>Edit</td>
+      <td>Update</td>
     </tr>
 
     <?php
@@ -51,7 +51,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <td><?php echo $data['IMDBrating']; ?></td>
         <td><?php echo $data['runtime']; ?></td>
         <td><?php echo $data['title']; ?></td>
-        <td><a href="UpdateMovies.php?id=<?php echo $data['movieId']; ?>">Edit</a></td>
+        <td><a href="UpdateMovies.php?id=<?php echo $data['movieId']; ?>">Update</a></td>
       </tr>
     <?php
     }

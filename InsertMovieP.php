@@ -1,23 +1,23 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
 }
 ?>
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 $link = mysqli_connect("localhost", "root", "", "movie project");
- 
+
 // Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+if ($link === false) {
+  die("ERROR: Could not connect. " . mysqli_connect_error());
 }
- 
+
 // Escape user inputs for security
 $Movie_ID = mysqli_real_escape_string($link, $_REQUEST['movieId']);
 $Country_ID = mysqli_real_escape_string($link, $_REQUEST['countryId']);
@@ -30,17 +30,18 @@ $Name = mysqli_real_escape_string($link, $_REQUEST['title']);
 
 // Attempt insert query execution
 $sql = "INSERT INTO movie (movieId, countryId, directorId, budget, year, IMDBrating, runtime, title) VALUES ('$Movie_ID', '$Country_ID', '$Director_ID', '$Budget', '$Year', '$IMDB_Rating', '$Run_Time', '$Name')";
-if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+if (mysqli_query($link, $sql)) {
+  echo "Records added successfully.";
+} else {
+  echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
- 
+
 // Close connection
 mysqli_close($link);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,12 +50,16 @@ mysqli_close($link);
   <link rel="stylesheet" href="Style.css">
   <title>Success</title>
 </head>
+
 <body class="text-white bg-dark">
-  <!-- Footer -->
+  <div class="my-5">
+    <a class="btn btn-danger" href="ShowMovieTable.php">View Movie?</a>
+  </div>
   <!-- Copyright -->
   <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2021 Copyright:
     <a class="text-white" href="https://www.facebook.com/mezbah.meraz/">Mazbaur Rashid (192-15-2837)</a>
   </div>
 </body>
+
 </html>
