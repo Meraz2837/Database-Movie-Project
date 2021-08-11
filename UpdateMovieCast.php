@@ -14,7 +14,7 @@ include "dbConn.php"; // Using database connection file here
 
 $id = $_GET['id']; // get id through query string
 
-$qry = mysqli_query($db,"select * from moviecast where moviecastId='$id'"); // select query
+$qry = mysqli_query($db,"SELECT * FROM moviecast WHERE moviecastId='$id'"); // select query
 
 $data = mysqli_fetch_array($qry); // fetch data
 

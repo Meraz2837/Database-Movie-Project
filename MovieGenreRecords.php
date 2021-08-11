@@ -29,7 +29,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     include "dbConn.php"; // Using database connection file here
 
-    $records = mysqli_query($db, "select * from moviegenre"); // fetch data from database
+    $records = mysqli_query($db, "SELECT * FROM moviegenre"); // fetch data from database
 
     while ($data = mysqli_fetch_array($records)) {
     ?>

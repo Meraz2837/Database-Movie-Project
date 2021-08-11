@@ -14,7 +14,7 @@ include "dbConn.php"; // Using database connection file here
 
 $id = $_GET['id']; // get id through query string
 
-$del = mysqli_query($db,"delete from moviecast where moviecastId = '$id'"); // delete query
+$del = mysqli_query($db,"DELETE FROM moviecast WHERE moviecastId = '$id'"); // delete query
 
 if($del)
 {

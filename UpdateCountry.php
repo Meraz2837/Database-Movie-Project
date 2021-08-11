@@ -23,7 +23,7 @@ if(isset($_POST['update'])) // when click on Update button
     $Countrycode = $_POST['countryId'];
     $Countryname = $_POST['countryName'];
 	
-    $edit = mysqli_query($db,"update country set countryId='$Countrycode', countryName='$Countryname' where countryId='$id'");
+    $edit = mysqli_query($db,"UPDATE country SET countryId='$Countrycode', countryName='$Countryname' WHERE countryId='$id'");
 	
     if($edit)
     {

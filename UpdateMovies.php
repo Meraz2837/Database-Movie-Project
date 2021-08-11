@@ -29,7 +29,7 @@ if(isset($_POST['update'])) // when click on Update button
     $Runtime = $_POST['runtime'];
     $Title = $_POST['title'];
 	
-    $edit = mysqli_query($db,"update movie set movieId='$movieID', countryId='$CountryID', directorId='$DirectorID', budget='$Budget', year='$Year', IMDBrating='$IMDBRating', runtime='$Runtime', title='$Title' where movieId='$id'");
+    $edit = mysqli_query($db,"UPDATE movie SET movieId='$movieID', countryId='$CountryID', directorId='$DirectorID', budget='$Budget', year='$Year', IMDBrating='$IMDBRating', runtime='$Runtime', title='$Title' WHERE movieId='$id'");
 	
     if($edit)
     {
