@@ -39,7 +39,7 @@ if(isset($_POST['update'])) // when click on Update button
 ?>
 
 <h3>Update Data</h3>
-<p>We recommend you to change only genre name. Because You may find an error (Cannot delete or update a parent row: a foreign key constraint fails)</p>
+<p>We recommend you to change only genre name. Because other fields are foreign key. So you may find an error (Cannot delete or update a parent row: a foreign key constraint fails)</p>
 
 <form method="POST">
   <input type="text" name="movieId" value="<?php echo $data['movieId'] ?>" placeholder="Enter Movie ID" Required>

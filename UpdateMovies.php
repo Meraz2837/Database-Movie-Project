@@ -45,7 +45,7 @@ if(isset($_POST['update'])) // when click on Update button
 ?>
 
 <h3>Update Data</h3>
-<p>We recommend you not to change Movie ID, Country ID, Director ID. Because You may find an error (Cannot delete or update a parent row: a foreign key constraint fails)</p>
+<p>We recommend you not to change Country ID, Director ID. Because these are foreign key. So, you may find an error (Cannot delete or update a parent row: a foreign key constraint fails)</p>
 
 <form method="POST">
   <input type="text" name="movieId" value="<?php echo $data['movieId'] ?>" placeholder="Enter Movie ID" Required>
@@ -56,6 +56,5 @@ if(isset($_POST['update'])) // when click on Update button
   <input type="text" name="IMDBrating" value="<?php echo $data['IMDBrating'] ?>" placeholder="Enter IMDB Rating" Required>
   <input type="text" name="runtime" value="<?php echo $data['runtime'] ?>" placeholder="Enter Runtime" Required>
   <input type="text" name="title" value="<?php echo $data['title'] ?>" placeholder="Enter Title" Required>
-  
   <input type="submit" name="update" value="Update">
 </form>

@@ -39,8 +39,6 @@ if(isset($_POST['update'])) // when click on Update button
 ?>
 
 <h3>Update Data</h3>
-<p>We recommend you to change only country name not country code. Because You may find an error (Cannot delete or update a parent row: a foreign key constraint fails)</p>
-
 <form method="POST">
   <input type="text" name="countryId" value="<?php echo $data['countryId'] ?>" placeholder="Enter Country Code" Required>
   <input type="text" name="countryName" value="<?php echo $data['countryName'] ?>" placeholder="Enter Country Name" Required>
