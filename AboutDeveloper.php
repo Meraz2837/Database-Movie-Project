@@ -144,7 +144,9 @@
   <img class="img-fluid" src="Image/Meraz Cover.png" alt="">
 
   <!-- Imgage -->
-  <section>
+  <section class="container-fluid mt-5">
+    <h1 class="text-white text-center">Personal information</h1>
+    <hr class="text-danger">
     <div class="card my-3 mx-auto bg-dark border-danger" style="max-width: 1800px;">
       <div class="row g-0">
         <div class="col-md-4 bg-dark">
@@ -155,10 +157,10 @@
             <h2 class="card-title text-danger">Md. Mazbaur Rashid<br>192-15-2837</h2>
             <p class="card-text">Simple person living up with small dreams waiting to be completed! Nice to meet you all</p>
             <p class="card-text">You may Visit:</p>
-            <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.facebook.com/mezbah.meraz/">Facebook</a>
-            <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.instagram.com/meraz_reborn/">Instagram</a>
-            <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://www.linkedin.com/in/mazbaur-rashid-meraz-7193681a6/">LinkedIn</a>
-            <a style="list-style-type: none; width: 150px;" class="btn btn-danger m-1" href="https://sites.google.com/diu.edu.bd/mazbaurrashid/home">Google Site</a>
+            <a style="list-style-type: none; width: 150px;" target="_blank" class="btn btn-danger m-1" href="https://www.facebook.com/mezbah.meraz/">Facebook</a>
+            <a style="list-style-type: none; width: 150px;" target="_blank" class="btn btn-danger m-1" href="https://www.instagram.com/meraz_reborn/">Instagram</a>
+            <a style="list-style-type: none; width: 150px;" target="_blank" class="btn btn-danger m-1" href="https://www.linkedin.com/in/mazbaur-rashid-meraz-7193681a6/">LinkedIn</a>
+            <a style="list-style-type: none; width: 150px;" target="_blank" class="btn btn-danger m-1" href="https://sites.google.com/diu.edu.bd/mazbaurrashid/home">Google Site</a>
           </div>
         </div>
       </div>
@@ -168,7 +170,9 @@
 
 
   <!-- Academic info -->
-  <section>
+  <section class="container-fluid mt-5">
+    <h1 class="text-white text-center">Academic information</h1>
+    <hr class="text-danger">
     <div class="card my-3 mx-auto bg-dark border-danger" style="max-width: 1800px;">
       <div class="row g-0 m-5">
         <div class="col-md-8 my-auto">
@@ -189,9 +193,8 @@
 
 
   <!-- Footer -->
-  <!-- Footer -->
   <section>
-    <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer">
+    <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer mt-5">
       <div class="container">
         <div class="row py-5 text-white">
           <div class="col-lg-3 col-md-12 col-12">

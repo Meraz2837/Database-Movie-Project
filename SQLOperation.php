@@ -260,7 +260,7 @@
         <hr class="text-white">
         <li>
           <h4 class="text-white m-3">Showing movies From 2015 to 2019</h4>
-          <a class="btn btn-danger mb-5" href="Between.php">Between</a>
+          <a class="btn btn-danger mb-3" href="Between.php">Between</a>
         </li>
       </ul>
     </div>
@@ -270,7 +270,7 @@
 
   <!-- Footer -->
   <section>
-    <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer">
+    <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer mt-5">
       <div class="container">
         <div class="row py-5 text-white">
           <div class="col-lg-3 col-md-12 col-12">
