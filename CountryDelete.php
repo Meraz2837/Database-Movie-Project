@@ -24,6 +24,6 @@ if($del)
 }
 else
 {
-    echo "Error deleting record"; // display error message if not delete
+    echo "Error deleting record". mysqli_error($db); // display error message if not delete
 }
 ?>
