@@ -16,7 +16,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 <body style="background: #212529; color:white;">
 
-  <h2 align="center">Movie Details</h2>
+  <h2 align="center">Movie Details From 2015 to 2019</h2>
 
   <table align="center" border="5" BORDERCOLOR=WHITE>
     <tr border="1" BORDERCOLOR=WHITE>
