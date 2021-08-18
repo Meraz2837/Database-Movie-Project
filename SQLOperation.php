@@ -243,9 +243,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <h1 class="text-white">Subquery</h1>
       <hr class="text-white">
       <ul class="list border border-danger">
-        <h4 class="text-white mt-3">Find movies released in Bangladesh</h4>
         <li>
-          <a class="btn btn-danger m-5 btnw" href="Subquery.php">Movies in Bangladesh</a>
+          <a class="btn btn-danger mt-5 btnw" href="Subquery.php">Movies in Bangladesh</a>
+        </li>
+        <li>
+          <a class="btn btn-danger my-5 btnw" href="Subquery2.php">Highest Budget Country</a>
         </li>
       </ul>
     </div>
