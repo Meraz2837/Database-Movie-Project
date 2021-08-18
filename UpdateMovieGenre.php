@@ -192,7 +192,7 @@ if (isset($_POST['update'])) // when click on Update button
         <form method="POST">
             <input type="text" name="movieId" value="<?php echo $data['movieId'] ?>" placeholder="Enter Movie ID" Required>
             <input type="text" name="genreName" value="<?php echo $data['genreName'] ?>" placeholder="Enter Genre Name" Required>
-            <br><input class="btn btn-danger my-3" type="submit" name="update" value="Update">
+            <br><input class="btn btn-danger my-3 btnw" type="submit" name="update" value="Update">
         </form>
     </div>
     <!-- Footer -->

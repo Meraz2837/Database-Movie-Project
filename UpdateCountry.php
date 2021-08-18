@@ -190,7 +190,7 @@ if (isset($_POST['update'])) // when click on Update button
     <form method="POST">
         <input type="text" name="countryId" value="<?php echo $data['countryId'] ?>" placeholder="Enter Country Code" Required>
         <input type="text" name="countryName" value="<?php echo $data['countryName'] ?>" placeholder="Enter Country Name" Required>
-        <br><input class="btn btn-danger my-3" type="submit" name="update" value="Update">
+        <br><input class="btn btn-danger my-3 btnw" type="submit" name="update" value="Update">
     </form>
 </div>
     <!-- Footer -->

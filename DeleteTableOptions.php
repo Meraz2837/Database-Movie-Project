@@ -168,19 +168,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <ul class="list border border-danger">
                 <h1 class="text-white my-3">Need to Delete Data?<br>Just hit on a table!</h1>
                 <li>
-                    <a class="btn btn-danger mt-5" href="CountryRecords.php">Country Table</a>
+                    <a class="btn btn-danger mt-5 btnw" href="CountryRecords.php">Country Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-danger mt-5" href="DirectorRecords.php">Director Table</a>
+                    <a class="btn btn-danger mt-5 btnw" href="DirectorRecords.php">Director Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-danger mt-5" href="MovieRecord.php">Movie Table</a>
+                    <a class="btn btn-danger mt-5 btnw" href="MovieRecord.php">Movie Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-danger mt-5" href="MovieCastRecords.php">Moviecast Table</a>
+                    <a class="btn btn-danger mt-5 btnw" href="MovieCastRecords.php">Moviecast Table</a>
                 </li>
                 <li>
-                    <a class="btn btn-danger my-5" href="MovieGenreRecords.php">Movie Genre Table</a>
+                    <a class="btn btn-danger my-5 btnw" href="MovieGenreRecords.php">Movie Genre Table</a>
                 </li>
 
             </ul>

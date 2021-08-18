@@ -168,10 +168,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h4 class="text-white mt-3">Do Join Operation</h4>
         <li>
-          <a class="btn btn-danger mt-5" href="InnerJoin.php">Inner Join</a>
+          <a class="btn btn-danger mt-5 btnw" href="InnerJoin.php">Inner Join</a>
         </li>
         <li>
-          <a class="btn btn-danger my-5" href="LeftJoin.php">Left Join</a>
+          <a class="btn btn-danger my-5 btnw" href="LeftJoin.php">Left Join</a>
         </li>
       </ul>
     </div>
@@ -184,10 +184,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h4 class="text-white mt-3">Re-arrange Movies in Ascending or Descending Order</h4>
         <li>
-          <a class="btn btn-danger mt-5" href="MovieAsc.php">Ascending Order</a>
+          <a class="btn btn-danger mt-5 btnw" href="MovieAsc.php">Ascending Order</a>
         </li>
         <li>
-          <a class="btn btn-danger my-5" href="MovieDesc.php">Descending Order</a>
+          <a class="btn btn-danger my-5 btnw" href="MovieDesc.php">Descending Order</a>
         </li>
       </ul>
     </div>
@@ -200,7 +200,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h4 class="text-white mt-3">Count movie in each year from Database</h4>
         <li>
-          <a class="btn btn-danger my-5" href="GroupByMovies.php">Group By</a>
+          <a class="btn btn-danger my-5 btnw" href="GroupByMovies.php">Group By</a>
         </li>
       </ul>
     </div>
@@ -213,10 +213,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h4 class="text-white mt-3">Find out Maximum and Minimum Budget</h4>
         <li>
-          <a class="btn btn-danger mt-5" href="MaximumMovieBudget.php">Maximum</a>
+          <a class="btn btn-danger mt-5 btnw" href="MaximumMovieBudget.php">Maximum</a>
         </li>
         <li>
-          <a class="btn btn-danger my-5" href="MinimumMovieBudget.php">Minimum</a>
+          <a class="btn btn-danger my-5 btnw" href="MinimumMovieBudget.php">Minimum</a>
         </li>
       </ul>
     </div>
@@ -229,10 +229,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h4 class="text-white mt-3">Find out Data without duplication</h4>
         <li>
-          <a class="btn btn-danger mt-5" href="Distinct1.php">Year from movie</a>
+          <a class="btn btn-danger mt-5 btnw" href="Distinct1.php">Year from movie</a>
         </li>
         <li>
-          <a class="btn btn-danger my-5" href="Distinct2.php">Cast name from moviecast</a>
+          <a class="btn btn-danger my-5 btnw" href="Distinct2.php">Cast name from moviecast</a>
         </li>
       </ul>
     </div>
@@ -245,7 +245,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h4 class="text-white mt-3">Find movies released in Bangladesh</h4>
         <li>
-          <a class="btn btn-danger m-5" href="Subquery.php">Movies in Bangladesh</a>
+          <a class="btn btn-danger m-5 btnw" href="Subquery.php">Movies in Bangladesh</a>
         </li>
       </ul>
     </div>
@@ -258,7 +258,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h4 class="text-white mt-3">Find Average IMDB Ratings</h4>
         <li>
-          <a class="btn btn-danger m-5" href="Average.php">Average IMDB Rating</a>
+          <a class="btn btn-danger m-5 btnw" href="Average.php">Average IMDB Rating</a>
         </li>
       </ul>
     </div>
@@ -271,17 +271,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <li>
           <h4 class="text-white m-3">Showing movies records of Muicize and Foster</h4>
-          <a class="btn btn-danger" href="Or.php">OR</a>
+          <a class="btn btn-danger btnw" href="Or.php">OR</a>
         </li>
         <hr class="text-white">
         <li>
           <h4 class="text-white m-3">Showing movies without Muicize and Foster</h4>
-          <a class="btn btn-danger" href="NotIn.php">NOT IN</a>
+          <a class="btn btn-danger btnw" href="NotIn.php">NOT IN</a>
         </li>
         <hr class="text-white">
         <li>
           <h4 class="text-white m-3">Showing movies From 2015 to 2019</h4>
-          <a class="btn btn-danger mb-3" href="Between.php">BETWEEN</a>
+          <a class="btn btn-danger mb-3 btnw" href="Between.php">BETWEEN</a>
         </li>
       </ul>
     </div>

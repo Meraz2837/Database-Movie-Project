@@ -205,25 +205,25 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           <h3 style="padding-top: 23%;" class="text-white text-center">You can do the Following with the Database</h3>
           <ul class="list text-center Button">
             <li>
-              <a class="btn btn-danger mt-5" href="ShowDB.php">Show Database</a>
+              <a class="btn btn-danger mt-5 btnw" href="ShowDB.php">Show Database</a>
             </li>
             <li>
-              <a class="btn btn-danger mt-5" href="AddTableOptions.php">Add to Database</a>
+              <a class="btn btn-danger mt-5 btnw" href="AddTableOptions.php">Add to Database</a>
             </li>
             <li>
-              <a class="btn btn-danger mt-5" href="UpdateTableOptions.php">Update Database</a>
+              <a class="btn btn-danger mt-5 btnw" href="UpdateTableOptions.php">Update Database</a>
             </li>
             <li>
-              <a class="btn btn-danger mt-5" href="DeleteTableOptions.php">Delete From Database</a>
+              <a class="btn btn-danger mt-5 btnw" href="DeleteTableOptions.php">Delete From Database</a>
             </li>
             <li>
-              <a class="btn btn-danger mt-5" href="SQLOperation.php">SQL Operations</a>
+              <a class="btn btn-danger mt-5 btnw" href="SQLOperation.php">SQL Operations</a>
             </li>
             <li>
-              <a class="btn btn-danger mt-5" href="AboutDeveloper.php">About Developer</a>
+              <a class="btn btn-danger mt-5 btnw" href="AboutDeveloper.php">About Developer</a>
             </li>
           </ul>
-          <div style="text-align: right; padding:20% 47.7%">
+          <div style="text-align: right; padding:20% 43%">
             <a class="btn text-danger" href="logout.php">Log out</a>
           </div>
         </div>

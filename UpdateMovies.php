@@ -205,7 +205,7 @@ if (isset($_POST['update'])) // when click on Update button
             <input type="text" name="IMDBrating" value="<?php echo $data['IMDBrating'] ?>" placeholder="Enter IMDB Rating" Required>
             <input type="text" name="runtime" value="<?php echo $data['runtime'] ?>" placeholder="Enter Runtime" Required>
             <input type="text" name="title" value="<?php echo $data['title'] ?>" placeholder="Enter Title" Required>
-            <br><input class="btn btn-danger my-3" type="submit" name="update" value="Update">
+            <br><input class="btn btn-danger my-3 btnw" type="submit" name="update" value="Update">
         </form>
     </div>
     <!-- Footer -->

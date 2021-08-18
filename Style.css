@@ -13,17 +13,22 @@ body{
 ul.list{
     list-style-type: none !important;
 }
-.btn{
-    width: 400px;
-}
+
 ul.list2{
     list-style-type: none !important;
 }
 .Button a{
     transition: 0.6s ease;
 }
+.btn{
+    transition: 0.6s ease;
+}
 .btn:hover{
+    color: white !important;
     background: rgb(132, 134, 134) !important;
+}
+.btnw{
+    width: 400px;
 }
 .butn{
     width: 25px !important;

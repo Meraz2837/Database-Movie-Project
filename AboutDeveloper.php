@@ -1,11 +1,11 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
 }
 ?>
 <!doctype html>
@@ -102,7 +102,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <body class="bg-dark">
 
-<section>
+  <section>
     <nav style="background-color: rgba(0, 0, 0, 0.2) !important;" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.php"><img class="img-fluid icon" src="Icons/Copy of Movie.png" alt=""></a>
@@ -165,10 +165,33 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <!-- Cover -->
 
   <img class="img-fluid" src="Image/Meraz Cover.png" alt="">
+  <!-- Instructor -->
+  <section class="container-fluid mt-5">
+    <h1 class="text-white text-center">Instructed By</h1>
+    <hr class="text-danger">
+    <div class="card my-3 mx-auto bg-dark border-danger" style="max-width: 1800px;">
+      <div class="row g-0">
+        <div class="col-md-8 bg-dark my-auto p-5">
+          <div class="card-body text-white">
+            <h2 class="card-title text-danger">Mohammad Jahangir Alam</h2><h4 class="text-danger">Lecturer, Daffodil International University</h4>
+            <p class="card-text">You may Visit:</p>
+            <a style="list-style-type: none; width: 200px;" target="_blank" class="btn btn-danger m-1" href="https://faculty.daffodilvarsity.edu.bd/profile/cse/jahangir-cse.html">Personal Webpage</a>
+            <a style="list-style-type: none; width: 200px;" target="_blank" class="btn btn-danger m-1" href="https://www.facebook.com/jahangir.csediu">Facebook</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="Icons/Jahangir Alam Sir.png" class="img-fluid rounded-start" alt="Meraz">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Imgage -->
   <section class="container-fluid mt-5">
-    <h1 class="text-white text-center">Personal information</h1>
+    <h1 class="text-white text-center">Developed By</h1>
+    <h3 class="text-white text-center">Personal information</h3>
     <hr class="text-danger">
     <div class="card my-3 mx-auto bg-dark border-danger" style="max-width: 1800px;">
       <div class="row g-0">
@@ -195,6 +218,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <!-- Academic info -->
   <section class="container-fluid mt-5">
     <h1 class="text-white text-center">Academic information</h1>
+    <h3 class="text-white text-center">Md. Mazbaur Rashid</h3>
     <hr class="text-danger">
     <div class="card my-3 mx-auto bg-dark border-danger" style="max-width: 1800px;">
       <div class="row g-0 m-5">

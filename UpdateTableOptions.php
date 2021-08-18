@@ -164,19 +164,19 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
       <ul class="list border border-danger">
         <h1 class="text-white my-3">Seems you did a mistake?<br>No worries, update data by clicking on a table!</h1>
         <li>
-          <a class="btn btn-danger mt-5" href="UpdateCountryRecords.php">Country Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="UpdateCountryRecords.php">Country Table</a>
         </li>
         <li>
-          <a class="btn btn-danger mt-5" href="UpdateDirectorRecords.php">Director Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="UpdateDirectorRecords.php">Director Table</a>
         </li>
         <li>
-          <a class="btn btn-danger mt-5" href="UpdateMovieRecords.php">Movie Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="UpdateMovieRecords.php">Movie Table</a>
         </li>
         <li>
-          <a class="btn btn-danger mt-5" href="UpdateMovieCastRecords.php">Moviecast Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="UpdateMovieCastRecords.php">Moviecast Table</a>
         </li>
         <li>
-          <a class="btn btn-danger my-5" href="UpdateMovieGenreRecords.php">Movie Genre Table</a>
+          <a class="btn btn-danger my-5 btnw" href="UpdateMovieGenreRecords.php">Movie Genre Table</a>
         </li>
       </ul>
     </div>

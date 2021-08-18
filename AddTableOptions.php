@@ -165,19 +165,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <ul class="list border border-danger">
         <h1 class="text-white my-3">Wanna insert something on database?<br>Just hit on a table!</h1>
         <li>
-          <a class="btn btn-danger mt-5" href="InsertCountry.php">Country Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="InsertCountry.php">Country Table</a>
         </li>
         <li>
-          <a class="btn btn-danger mt-5" href="InsertDirector.php">Director Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="InsertDirector.php">Director Table</a>
         </li>
         <li>
-          <a class="btn btn-danger mt-5" href="InsertMovie.php">Movie Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="InsertMovie.php">Movie Table</a>
         </li>
         <li>
-          <a class="btn btn-danger mt-5" href="InsertMovieCast.php">Moviecast Table</a>
+          <a class="btn btn-danger mt-5 btnw" href="InsertMovieCast.php">Moviecast Table</a>
         </li>
         <li>
-          <a class="btn btn-danger my-5" href="InsertMovieGenre.php">Movie Genre Table</a>
+          <a class="btn btn-danger my-5 btnw" href="InsertMovieGenre.php">Movie Genre Table</a>
         </li>
       </ul>
     </div>
