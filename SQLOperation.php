@@ -1,11 +1,11 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: login.php");
+  exit;
 }
 ?>
 <!doctype html>
@@ -274,6 +274,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <li>
           <h4 class="text-white m-3">Showing movies records of Muicize and Foster</h4>
           <a class="btn btn-danger btnw" href="Or.php">OR</a>
+        </li>
+        <hr class="text-white">
+        <li>
+        <li>
+          <h4 class="text-white m-3">Showing movies records of IMDB Rating 9 and Year 2019</h4>
+          <a class="btn btn-danger btnw" href="AND.php">AND</a>
         </li>
         <hr class="text-white">
         <li>

@@ -13,7 +13,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <head>
     <link rel="shortcut icon" type="image/png" href="Icons/Copy of Movie.png">
-    <title>Moviebuzz - Inner Join</title>
+    <title>Moviebuzz - Subquery</title>
 </head>
 
 <body style="background: #212529; color:white;">
