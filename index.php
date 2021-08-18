@@ -231,6 +231,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div>
   </div>
 
+  <section>
+    <div class="container my-5 text-center text-white">
+      <h1 class="text-white">ER Diagram</h1>
+      <p  class="text-white">Where we just started</p>
+      <hr class="text-danger">
+      <img class="img-fluid" src="image/ER Moviebuzz.png" alt="ER Diagram">
+      <h4>Having problem in dark mode?</h4>
+      <a class="btn btn-danger mt-2" href="diagramlight.php">Show diagram in light mode</a>
+    </div>
+  </section>
+
   <!-- Footer -->
   <section>
     <div style="background-color: rgba(0, 0, 0, 0.2);" class="Footer">
