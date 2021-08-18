@@ -22,21 +22,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
   <table align="center" border="5" BORDERCOLOR=WHITE>
       <tr border = "1" BORDERCOLOR=WHITE>
-            <td>Movie ID</td>
-            <td>Title</td>
+            <td>Movie name</td>
+            <td>Genre name</td>
         </tr>
 
         <?php
 
         include "dbConn.php"; // Using database connection file here
 
-        $records = mysqli_query($db, "SELECT movie.movieid, movie.title FROM movie LEFT JOIN moviegenre ON movie.movieid=moviegenre.movieid"); // fetch data from database
+        $records = mysqli_query($db, "SELECT movie.title, moviegenre.genreName FROM movie LEFT JOIN moviegenre ON movie.movieid=moviegenre.movieid"); // fetch data from database
 
         while ($data = mysqli_fetch_array($records)) {
         ?>
             <tr>
-                <td><?php echo $data['movieid']; ?></td>
                 <td><?php echo $data['title']; ?></td>
+                <td><?php echo $data['genreName']; ?></td>
             </tr>
         <?php
         }
