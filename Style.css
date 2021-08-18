@@ -22,7 +22,7 @@ ul.list2{
 .Button a{
     transition: 0.6s ease;
 }
-.Button a:hover{
+.btn:hover{
     background: rgb(132, 134, 134) !important;
 }
 .butn{
